@@ -1,0 +1,50 @@
+git-add = add file contents to the index
+- git add . = add all file in source control to the index
+
+git-branch = list, create, or delete branches
+- git branch -d <branch_name> = delete branch <branch_name>
+- git branch -a = check remote and local branch
+- git branch <branch_name> = create new branch
+
+git-checkout = switch branches or restore working tree files
+- git checkout <branch_name> = switch to another branch
+- git checkout -b <branch_name> = create and switch branch at the same time
+
+git-clone = clone a repository into a new directory
+- git clone <repo_url> = clone a repository from remote repository
+
+git-commit = record changes to the repository
+- git commit -m "<commit_message>" = save change to repository with message
+
+git-fetch = download objects and refs from another repository
+- git fetch <remote_name> <branch_name> = copies changes into local git repository
+
+git-init = create an empty git repository or reinitialize an existing one
+
+git-log = show commit logs
+
+git-merge = join two or more development histories together
+- git checkout main and git merge <branch_name> = merge <branch_name> to branch main
+
+git-pull = fetch from and integrate with another repository or a local branch
+- git pull <remote_name> <branch_name> = copies changes from a remote repository directly into working directory
+
+git-push = update remote refs along with associated objects
+- git push <remote_name> <branch_name> = push local changes to new branch on remote repository
+
+git-revert = revert some existing commits
+- git revert HEAD = revert last commit in HEAD and create a new commit with the new reverted changes
+
+git-status = show the working tree status
+- git status = see which changes have been staged and which files aren't being tracked by Git
+
+git-switch = switch branches
+- git switch <branch_name> = switch to branch <branch_name>
+
+git-config = get and set repository or global options
+- git config --global user.name "<user_name>" = specify username variable that will shown in commiter fields of commit objects
+
+git-remote = manage set of tracked repository
+- git remote add <remote_name> <repo_url> = remote a remote repository
+
+git-version = display version information about Git
