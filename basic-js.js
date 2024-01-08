@@ -35,8 +35,15 @@ function balikKata(kata) {
 function konversiMenit(menit) {
   const m = String(menit / 60);
   const s = `${menit % 60 < 10 ? "0" : ""}${menit % 60}`;
+  let m2 = "";
 
-  return m[0] + ":" + s;
+  // m2 = get rounded number from m
+  for (const i in m) {
+    if (m[i] == ".") break;
+    m2 += m[i];
+  }
+
+  return m2 + ":" + s;
 }
 
 // TEST CASES
