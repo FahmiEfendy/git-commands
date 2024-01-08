@@ -1,14 +1,20 @@
 git-add = add file contents to the index
 - git add . = add all file in source control to the index
+- git add <file_name> = add specific file to the index
+- git add style = add entire directory to the index
 
 git-branch = list, create, or delete branches
 - git branch -d <branch_name> = delete branch <branch_name>
+- git branch -D <branch_name> = force delete branch <branch_name>
 - git branch -a = check remote and local branch
 - git branch <branch_name> = create new branch
+- git branch -m <branch_name> <new_branch_name> = rename a local branch
 
 git-checkout = switch branches or restore working tree files
+- git checkout -b = switch to the branch last checked out
 - git checkout <branch_name> = switch to another branch
 - git checkout -b <branch_name> = create and switch branch at the same time
+- git checkout -b <branch_name> <remote_name>/<branch_name> = clone a remote branch and switch to it
 
 git-clone = clone a repository into a new directory
 - git clone <repo_url> = clone a repository from remote repository
@@ -22,18 +28,27 @@ git-fetch = download objects and refs from another repository
 git-init = create an empty git repository or reinitialize an existing one
 
 git-log = show commit logs
+- git log = view changes
+- git log --summary = view changes (detailed)
+- git log --oneline = view changes (briefly)
 
 git-merge = join two or more development histories together
 - git checkout main and git merge <branch_name> = merge <branch_name> to branch main
 
 git-pull = fetch from and integrate with another repository or a local branch
+- git pull = update local repository to the newest commit from remote repository
 - git pull <remote_name> <branch_name> = copies changes from a remote repository directly into working directory
 
 git-push = update remote refs along with associated objects
 - git push <remote_name> <branch_name> = push local changes to new branch on remote repository
+- git push <remote_name> --delete <branch_name> = delete a remote branch
 
 git-revert = revert some existing commits
+- git revert <commit_id> = revert specific commit
 - git revert HEAD = revert last commit in HEAD and create a new commit with the new reverted changes
+
+git-rm = remove files from the working tree and from the index
+- git rm -f styling/style.css = remove style.css from the index
 
 git-status = show the working tree status
 - git status = see which changes have been staged and which files aren't being tracked by Git
