@@ -1,0 +1,138 @@
+/* Global CSS */
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+h1,
+h3 {
+  font-family: Arial, "Bebas Neue", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 82.79px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 27.6px;
+}
+
+.main-btn {
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 5px;
+  height: 50px;
+  width: 300px;
+}
+
+.nav {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 10%;
+  line-height: 16.34px;
+  text-transform: uppercase;
+}
+
+/* Main Screen CSS */
+
+.main-screen {
+  background-image: url("asset/main-bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.main-screen__backdrop {
+  background: radial-gradient(
+    189.96% 61.18% at 50% 38.82%,
+    rgba(255, 181, 72, 0) 0%,
+    rgba(52, 44, 29, 0.80319) 73.22%,
+    #08090a 99.74%
+  );
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+.header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  padding-left: 107px;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 32.68px;
+  letter-spacing: 10%;
+  z-index: 10;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 162px;
+  margin-right: 142px;
+  z-index: 10;
+}
+
+.nav:nth-child(5) {
+  margin-left: 800px;
+}
+
+.header__backdrop {
+  height: 90px;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  z-index: 8;
+}
+
+.title {
+  margin-top: 223px;
+  z-index: 10;
+}
+
+.sub-title {
+  margin-top: 58px;
+  z-index: 10;
+}
+
+.play-btn {
+  margin: 58px auto 0 auto;
+  z-index: 10;
+}
+
+.scroll-down {
+  text-align: center;
+  margin-top: 200px;
+  z-index: 10;
+}
+
+.scroll-down p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+}
