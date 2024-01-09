@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.sub-text {
+  font-size: 14px;
+}
+
+.main-btn {
+  font-size: 16px;
+}
+
+.nav {
+  font-size: 12px;
+  text-transform: uppercase;
+}
