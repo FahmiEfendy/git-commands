@@ -75,9 +75,10 @@ h3 {
 }
 
 .header {
-  height: 90px;
+  height: 0px;
   display: flex;
   align-items: center;
+  margin-top: 40px;
 }
 
 .header__logo {
@@ -93,14 +94,14 @@ h3 {
 .header__nav {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
   margin-left: 162px;
   margin-right: 142px;
   z-index: 10;
 }
 
 .header__nav .nav:nth-child(5) {
-  margin-left: 800px;
+  margin-left: 600px;
 }
 
 .header__backdrop {
