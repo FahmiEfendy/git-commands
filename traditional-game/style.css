@@ -5,6 +5,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: #fff;
+  position: relative;
 }
 
 h1,
@@ -515,12 +516,11 @@ h3 {
 
 .quotes__backdrop {
   background: radial-gradient(
-      70.52% 37.27% at 24.21% 47.47%,
-      rgba(35, 15, 15, 0) 0%,
-      rgba(0, 0, 0, 0) 51.1%,
-      #080a0b 99.74%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    70.52% 37.27% at 24.21% 47.47%,
+    rgba(35, 15, 15, 0) 0%,
+    rgba(0, 0, 0, 0) 51.1%,
+    #080a0b 99.74%
+  );
   left: 0;
   position: absolute;
   top: 0;
@@ -537,6 +537,12 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.newsletter section {
+  display: flex;
+  padding-top: 80px;
+  margin-left: 340px;
 }
 
 .newsletter__img {
@@ -560,12 +566,6 @@ h3 {
   top: 0;
   height: 100%;
   width: 100%;
-}
-
-.newsletter section {
-  display: flex;
-  padding-top: 80px;
-  margin-left: 340px;
 }
 
 .newsletter__text {
