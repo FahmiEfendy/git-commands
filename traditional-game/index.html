@@ -20,17 +20,17 @@
     />
   </head>
   <body>
-    <div class="main-screen">
+    <div class="main-screen" id="main-screen">
       <!-- TODO: Navigate to Another Screen -->
       <div class="header">
         <h3 class="header__logo">LOGO</h3>
         <div class="header__nav">
-          <span class="nav">HOME</span>
-          <span class="nav">WORK</span>
-          <span class="nav">CONTACT</span>
-          <span class="nav">ABOUT ME</span>
-          <span class="nav">SIGN UP</span>
-          <span class="nav">LOGIN</span>
+          <a href="#main-screen" class="nav">HOME</a>
+          <a href="#gallery-screen" class="nav">ABOUT</a>
+          <a href="#features-screen" class="nav">GAME FEATURES</a>
+          <a href="#requirements-screen" class="nav">SYSTEMS REQUIREMENTS</a>
+          <a href="#quotes-screen" class="nav">QUOTES</a>
+          <a href="#newsletter-screen" class="nav">NEWSLETTERS</a>
         </div>
         <div class="header__backdrop"></div>
       </div>
@@ -59,7 +59,7 @@
       <div class="main-screen__backdrop"></div>
     </div>
     <!-- TODO: Implement Image Slider with DOM Manipulation -->
-    <div class="gallery-screen">
+    <div class="gallery-screen" id="gallery-screen">
       <div class="gallery-screen__content">
         <section class="gallery-screen__text">
           <h3>What's so special?</h3>
@@ -189,7 +189,7 @@
       <div class="gallery-screen__backdrop"></div>
       <div class="gallery-screen__backdrop-second"></div>
     </div>
-    <div class="features-screen">
+    <div class="features-screen" id="features-screen">
       <section>
         <div class="features-screen__text">
           <h3>What's so special?</h3>
@@ -277,7 +277,7 @@
       <div class="features-screen__backdrop"></div>
     </div>
     <!-- TODO: Futuristic Line on Bottom and Bottom Right Grid -->
-    <div class="requirements">
+    <div class="requirements" id="requirements-screen">
       <div class="requirements__text">
         <h3>Can My Computer Run This Game?</h3>
         <h1>SYSTEM REQUIREMENTS</h1>
@@ -315,7 +315,7 @@
       </div>
       <div class="requirements__backdrop"></div>
     </div>
-    <div class="quotes">
+    <div class="quotes" id="quotes-screen">
       <section>
         <div class="quotes__text">
           <h1>TOP SCORES</h1>
@@ -421,7 +421,7 @@
       </section>
       <div class="quotes__backdrop"></div>
     </div>
-    <div class="newsletter">
+    <div class="newsletter" id="newsletter-screen">
       <section>
         <div class="newsletter__img">
           <img src="asset/skull-img.png" alt="skull image" />
@@ -453,11 +453,11 @@
       </section>
       <!-- TODO: Navigate to Another Screen -->
       <nav class="newsletter__nav">
-        <a href="" class="nav">MAIN</a>
-        <a href="" class="nav">ABOUT</a>
-        <a href="" class="nav">GAME FEATURES</a>
-        <a href="" class="nav">SYSTEM REQUIREMENTS</a>
-        <a href="" class="nav">QUOTES</a>
+        <a href="#main-screen" class="nav">HOME</a>
+        <a href="#gallery-screen" class="nav">ABOUT</a>
+        <a href="#features-screen" class="nav">GAME FEATURES</a>
+        <a href="#requirements-screen" class="nav">SYSTEM REQUIREMENTS</a>
+        <a href="#quotes-screen" class="nav">QUOTES</a>
         <div class="newsletter__nav-social">
           <!-- Facebook Icons -->
           <a href="" class="nav"
