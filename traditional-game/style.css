@@ -302,3 +302,85 @@ h3 {
   width: 100%;
   z-index: 6;
 }
+
+/* Requirements */
+
+.requirements {
+  background-image: url("asset/requirement-bg.png");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.requirements__text {
+  position: relative;
+  z-index: 10;
+}
+
+.requirements__text h3 {
+  margin-top: 0;
+  padding-top: 146px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.requirements__text h1 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 65px;
+  margin: 55px 0 0 130px;
+  text-align: left;
+  width: 30%;
+}
+
+.requirements__grid {
+  display: grid;
+  position: relative;
+  z-index: 10;
+  margin: 44px 0 0 121px;
+  width: 41%;
+}
+
+.requirements__grid-row {
+  border: 1px solid #979797;
+  padding: 15px 20px;
+}
+
+.requirements__grid-row:nth-child(1n) {
+  grid-column: 1;
+}
+
+.requirements__grid-row:nth-child(2n) {
+  grid-column: 2;
+}
+
+.requirements__grid-row:last-child {
+  grid-column: 1 / span 2;
+}
+
+.requirements__grid-title {
+  color: #ffb548;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.requirements__grid-description {
+  margin: 7px 0 18px 0;
+}
+
+.requirements__backdrop {
+  background: radial-gradient(
+    33.26% 45% at 64.32% 47.1%,
+    rgba(255, 255, 255, 0) 3.36%,
+    rgba(0, 0, 0, 0) 19.22%,
+    #080a0b 99.74%
+  );
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 6;
+}
