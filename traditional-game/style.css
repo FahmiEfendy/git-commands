@@ -155,6 +155,7 @@ h3 {
 .gallery-screen section {
   position: relative;
   z-index: 7;
+  margin-left: 200px;
 }
 
 .gallery-screen__text {
@@ -171,12 +172,12 @@ h3 {
 
 .gallery-screen section h3 {
   margin: 0;
-  padding-top: 254px;
+  padding-top: 204px;
   text-align: left;
 }
 
 .gallery-screen__img-container {
-  margin-top: 290px;
+  margin-top: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -404,7 +405,7 @@ h3 {
 
 .quotes__text {
   padding-top: 340px;
-  margin-left: 119px;
+  margin-left: 300px;
 }
 
 .quotes__text h1 {
@@ -429,6 +430,7 @@ h3 {
 
 .quotes__list {
   padding-top: 160px;
+  margin-left: 50px;
 }
 
 .quotes__list-item {
