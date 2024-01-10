@@ -159,7 +159,7 @@ h3 {
   margin-left: 83px;
 }
 
-.gallery-screen section h1{
+.gallery-screen section h1 {
   font-size: 56px;
   font-weight: 400;
   line-height: 65px;
@@ -217,4 +217,88 @@ h3 {
   height: 100%;
   width: 100%;
   z-index: 5;
+}
+
+/* Features */
+
+.features-screen {
+  background-image: url("asset/features-bg.png");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.features-screen section {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 55%;
+  padding-top: 259px;
+}
+
+.features-screen__text h3,
+.features-screen__text h1 {
+  text-align: left;
+  margin: 0;
+}
+
+.features-screen__text h1 {
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 65px;
+}
+
+.features-screen__point {
+  margin-top: 78px;
+}
+
+.features-screen__title {
+  color: #ffb548;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.features-screen__title p {
+  margin-left: 33px;
+}
+
+.features-screen__description {
+  display: flex;
+  width: 65%;
+}
+
+.features-screen__description svg {
+  position: absolute;
+  top: 64%;
+  margin-left: 7px;
+}
+
+.features-screen__description p {
+  margin-left: 50px;
+  margin-top: 6px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.features-screen__backdrop {
+  background: radial-gradient(
+    51.1% 80.48% at 30.85% 53.65%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0) 19.2%,
+    rgba(4, 5, 6, 0.520671) 47.48%,
+    #080a0b 99.74%
+  );
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 6;
 }
