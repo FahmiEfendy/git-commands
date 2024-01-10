@@ -384,3 +384,143 @@ h3 {
   width: 100%;
   z-index: 6;
 }
+
+/* Quotes */
+
+.quotes {
+  background-image: url("asset/quotes-bg.png");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.quotes section {
+  position: relative;
+  z-index: 8;
+  display: flex;
+}
+
+.quotes__text {
+  padding-top: 340px;
+  margin-left: 119px;
+}
+
+.quotes__text h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 65px;
+}
+
+.quotes__text p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.quotes__main-btn {
+  margin-top: 30px;
+  height: 60px;
+  width: 261px;
+}
+
+.quotes__list {
+  padding-top: 160px;
+}
+
+.quotes__list-item {
+  width: 453px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  position: relative;
+  min-width: min-content;
+}
+
+.quotes__list-item:nth-child(1) {
+  margin-left: 350px;
+}
+
+.quotes__list-item:nth-child(2) {
+  margin: 30px 204px;
+}
+
+.quotes__list-item:nth-child(3) {
+  margin-left: 310px;
+}
+
+.quotes__list-item-profile {
+  display: flex;
+}
+
+.quotes__list-item-profile img {
+  border-radius: 100%;
+  height: 62px;
+  width: 62px;
+  margin: 15px 0 0 15px;
+}
+
+.quotes__list-item-profile-bg {
+  position: absolute;
+  background-color: #ffb548;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  top: 17px;
+  left: 22px;
+  z-index: -1;
+}
+
+.quotes__list-item-profile-user {
+  margin: 27px 0 0 30px;
+}
+
+.quotes__list-item-profile-user-name {
+  font-family: Arial, "Bebas Neue", sans-serif;
+  color: #ffb548;
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+.quotes__list-item-profile-user-work {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.quotes__list-item-profile svg {
+  margin: auto 20px auto auto;
+}
+
+.quotes__list-item-review {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 23px 0 0 17px;
+}
+
+.quotes__list-item-date {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 9px 0 20px 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.quotes__backdrop {
+  background: radial-gradient(
+      70.52% 37.27% at 24.21% 47.47%,
+      rgba(35, 15, 15, 0) 0%,
+      rgba(0, 0, 0, 0) 51.1%,
+      #080a0b 99.74%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 6;
+}
