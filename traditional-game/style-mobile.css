@@ -66,6 +66,10 @@
     margin-bottom: 50px;
   }
 
+  .gallery-screen__img-carousel {
+    width: 600px;
+  }
+
   .gallery-screen__img {
     height: calc(477px - (477px * 0.25));
     width: calc(858px - (858px * 0.25));
