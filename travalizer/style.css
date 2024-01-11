@@ -27,6 +27,7 @@ h3 {
   margin: auto;
   height: 65%;
   width: 70%;
+  display: flex;
 }
 
 /* Login */
@@ -34,7 +35,7 @@ h3 {
 .login {
   border-radius: 20px 0 0 20px;
   background-color: #fff;
-  width: 45%;
+  width: 40%;
   height: 100%;
   display: flex;
 }
@@ -83,7 +84,7 @@ h3 {
 .login__form-password label {
   font-weight: 600;
   margin-bottom: 0.4rem;
-  color: #2F3D4C;
+  color: #2f3d4c;
 }
 
 .login__form-email input,
@@ -97,7 +98,7 @@ h3 {
 }
 
 .login__form-password svg {
-  right: 5rem;
+  right: 1.5rem;
   top: 2.3rem;
   position: absolute;
 }
@@ -112,7 +113,7 @@ h3 {
 }
 
 .login__extra a {
-  margin: 0 4rem 0 auto;
+  margin: 0 0.8rem 0 auto;
 }
 
 .login__button button {
@@ -149,4 +150,24 @@ h3 {
 .login__footer a {
   font-weight: 500;
   text-decoration: none;
+}
+
+/* Illustration */
+
+.illustration {
+  border-radius: 0 20px 20px 0;
+  background-color: #f5dbc4;
+  width: 60%;
+  height: 100%;
+}
+
+.illustration__container {
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.illustration__container svg {
+  margin: auto;
 }
