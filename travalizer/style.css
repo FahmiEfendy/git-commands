@@ -95,11 +95,24 @@ h3 {
   border: 1px solid #b8d6bf;
   padding-left: 1rem;
   font-size: 0.9em;
+  color: #355b3e;
 }
 
-.login__form-password svg {
-  right: 1.5rem;
-  top: 2.3rem;
+.login__form-password button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Remove button pressed animation when clicked */
+.login__form-password button:active {
+  border-style: outset;
+}
+
+.login__form-password i {
+  right: 1rem;
+  top: 67%;
+  color: #95b29b;
   position: absolute;
 }
 
@@ -108,12 +121,19 @@ h3 {
   align-items: center;
 }
 
-.login__extra p {
-  margin-left: 0.3rem;
+.login__extra button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: #029664;
 }
 
 .login__extra a {
   margin: 0 0.8rem 0 auto;
+}
+
+.login__button {
+  display: flex;
 }
 
 .login__button button {
@@ -132,12 +152,12 @@ h3 {
 .login__button-signup {
   border: 1px solid #029664;
   background-color: #fff;
-  margin-left: 2rem;
+  margin-left: auto;
   color: #029664;
 }
 
 .login__footer {
-  margin-top: 2rem;
+  margin-top: 0.4rem;
   display: flex;
   align-items: center;
   width: 90%;
@@ -302,7 +322,7 @@ h3 {
   }
 
   .login__text p {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   .login__button button {
@@ -438,10 +458,9 @@ h3 {
   }
 }
 
-
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 390px) {
   .login__button {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   .login__button button {
@@ -466,5 +485,4 @@ h3 {
   .login__text p {
     font-size: 1em;
   }
-  
 }
