@@ -53,6 +53,7 @@ h3 {
 .login__logo svg {
   width: 48px;
   height: 48px;
+  color: #355b3e;
 }
 
 .login__logo h2 {
@@ -88,7 +89,7 @@ h3 {
 
 .login__form-email input,
 .login__form-password input {
-  width: 25rem;
+  width: 94%;
   height: 2.5rem;
   border-radius: 0.3rem;
   border: 1px solid #b8d6bf;
@@ -119,6 +120,7 @@ h3 {
   height: 3rem;
   width: 12rem;
   border-radius: 0.4rem;
+  font-weight: 600;
 }
 
 .login__buton-login {
@@ -138,12 +140,18 @@ h3 {
   margin-top: 2rem;
   display: flex;
   align-items: center;
-  width: 75%;
+  width: 90%;
   justify-content: space-between;
 }
 
 .login__footer p {
   color: #58745e;
+}
+
+.login__footer-links {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
 }
 
 .login__footer a {
@@ -171,7 +179,46 @@ h3 {
   margin: auto;
 }
 
-/* 720p */
+@media only screen and (max-width: 1650px) {
+  .login__text h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .login__button {
+    display: flex;
+  }
+
+  .login__button button {
+    width: 10rem;
+  }
+
+  .login__button-signup {
+    margin-left: auto;
+  }
+
+  .login__footer {
+    margin-top: 0.5rem;
+  }
+
+  .login__footer p {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  .login__footer p {
+    font-size: 80%;
+  }
+
+  .login__button button {
+    width: 45%;
+  }
+  .login__footer-links {
+    font-size: 0.85em;
+  }
+}
+
 @media only screen and (max-width: 1280px) {
   h2 {
     font-size: 1.5em;
@@ -192,11 +239,11 @@ h3 {
   }
 
   .login__text p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .login__form div {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
   }
 
   .login__form-email label,
@@ -206,7 +253,6 @@ h3 {
 
   .login__form-email input,
   .login__form-password input {
-    width: 17rem;
     height: 2.2rem;
     font-size: 0.8em;
   }
@@ -233,7 +279,7 @@ h3 {
   }
 
   .login__button-signup {
-    margin-left: 1.6rem;
+    margin-left: auto;
   }
 
   .login__footer {
@@ -248,4 +294,177 @@ h3 {
   .login__footer a {
     font-size: 0.7em;
   }
+}
+
+@media only screen and (max-width: 1160px) {
+  .login__text h3 {
+    font-size: 1em;
+  }
+
+  .login__text p {
+    font-size: .8em;
+  }
+
+  .login__button button {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    position: relative;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .container {
+    height: 83%;
+    width: 100%;
+  }
+
+  .login__container {
+    width: 85%;
+  }
+
+  .login {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .login__logo {
+    position: absolute;
+    top: 1rem;
+    left: 40%;
+    color: #fff;
+  }
+
+  .login__logo svg {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+  }
+
+  .login__text h3 {
+    margin-top: 15rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.3em;
+  }
+
+  .login__text p {
+    font-size: 1em;
+  }
+
+  .login__form div {
+    margin-top: 1.5rem;
+  }
+
+  .login__form div:nth-child(2) {
+    margin-top: 1.3rem;
+  }
+
+  .login__form-email label,
+  .login__form-password label {
+    font-size: 1em;
+  }
+
+  .login__form-email input,
+  .login__form-password input {
+    width: 95%;
+    height: 3rem;
+    font-size: 1em;
+  }
+
+  .login__form-password svg {
+    right: 3%;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+  }
+
+  .login__extra {
+    margin-top: 0.3rem;
+    font-size: 1.2em;
+  }
+
+  .login__button {
+    display: flex;
+  }
+
+  .login__button button {
+    height: 3rem;
+    width: 10rem;
+    font-size: 1em;
+  }
+
+  .login__button-signup {
+    margin-left: auto;
+  }
+
+  .login__footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .login__footer p {
+    font-size: 1em;
+  }
+
+  .login__footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.3em;
+    /* margin-top: .5rem; */
+  }
+
+  .illustration {
+    position: absolute;
+    border-radius: 0;
+    height: 30%;
+    width: 100%;
+  }
+
+  .illustration__container svg {
+    height: 11rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .login__logo {
+    left: 26%;
+  }
+}
+
+
+@media only screen and (max-width: 390px){
+  .login__button {
+    font-size: .8em;
+  }
+
+  .login__button button {
+    height: 2.5rem;
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .login__logo {
+    left: 25%;
+  }
+
+  .login__logo h2 {
+    font-size: 1.5em;
+  }
+
+  .login__text h3 {
+    font-size: 1.2em;
+  }
+
+  .login__text p {
+    font-size: 1em;
+  }
+  
 }
