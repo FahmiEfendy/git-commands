@@ -1,0 +1,152 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: #223a28;
+  box-shadow: 0px 72px 80px -48px rgba(34, 58, 40, 1);
+  color: #355b3e;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  height: 65%;
+  width: 70%;
+}
+
+/* Login */
+
+.login {
+  border-radius: 20px 0 0 20px;
+  background-color: #fff;
+  width: 45%;
+  height: 100%;
+  display: flex;
+}
+
+.login__container {
+  width: 80%;
+  height: 90%;
+  margin: auto;
+}
+
+.login__logo {
+  display: flex;
+  align-items: center;
+}
+
+.login__logo svg {
+  width: 48px;
+  height: 48px;
+}
+
+.login__logo h2 {
+  margin: 0 0 0 0.5rem;
+}
+
+.login__text h3 {
+  margin-top: 2rem;
+}
+
+.login__text p {
+  margin-top: 0.5rem;
+  color: #58745e;
+}
+
+.login__form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.login__form-password {
+  position: relative;
+  width: 100%;
+}
+
+.login__form-email label,
+.login__form-password label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #2F3D4C;
+}
+
+.login__form-email input,
+.login__form-password input {
+  width: 25rem;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #b8d6bf;
+  padding-left: 1rem;
+  font-size: 0.9em;
+}
+
+.login__form-password svg {
+  right: 5rem;
+  top: 2.3rem;
+  position: absolute;
+}
+
+.login__extra {
+  display: flex;
+  align-items: center;
+}
+
+.login__extra p {
+  margin-left: 0.3rem;
+}
+
+.login__extra a {
+  margin: 0 4rem 0 auto;
+}
+
+.login__button button {
+  height: 3rem;
+  width: 12rem;
+  border-radius: 0.4rem;
+}
+
+.login__buton-login {
+  color: #fff;
+  background-color: #029664;
+  border: none;
+}
+
+.login__button-signup {
+  border: 1px solid #029664;
+  background-color: #fff;
+  margin-left: 2rem;
+  color: #029664;
+}
+
+.login__footer {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.login__footer p {
+  color: #58745e;
+}
+
+.login__footer a {
+  font-weight: 500;
+  text-decoration: none;
+}
