@@ -11,8 +11,7 @@ body {
 
 h2 {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2em;
 }
 
 h3 {
@@ -170,4 +169,83 @@ h3 {
 
 .illustration__container svg {
   margin: auto;
+}
+
+/* 720p */
+@media only screen and (max-width: 1280px) {
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+
+  .login__logo svg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .login__text h3 {
+    margin-top: 1.5rem;
+  }
+
+  .login__text p {
+    font-size: 0.8em;
+  }
+
+  .login__form div {
+    margin-top: 1rem;
+  }
+
+  .login__form-email label,
+  .login__form-password label {
+    font-size: 0.8em;
+  }
+
+  .login__form-email input,
+  .login__form-password input {
+    width: 17rem;
+    height: 2.2rem;
+    font-size: 0.8em;
+  }
+
+  .login__form-password svg {
+    right: 0.3rem;
+    top: 2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .login__extra p,
+  .login__extra a {
+    font-size: 0.8em;
+  }
+
+  .login__extra a {
+    margin-right: 0;
+  }
+
+  .login__button button {
+    height: 2rem;
+    width: 8rem;
+  }
+
+  .login__button-signup {
+    margin-left: 1.6rem;
+  }
+
+  .login__footer {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .login__footer p {
+    font-size: 0.7em;
+  }
+
+  .login__footer a {
+    font-size: 0.7em;
+  }
 }
