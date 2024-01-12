@@ -84,7 +84,7 @@ body {
 
 .container {
   width: 30%;
-  height: 75%;
+  height: 85%;
   margin: auto;
 }
 
@@ -152,7 +152,7 @@ body {
   background-color: var(--bg-btn-container);
   grid-gap: 2rem 1rem;
   border-radius: 0.7rem;
-}
+  }
 
 .button button {
   height: 4rem;

@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&dis=swap"
       rel="stylesheet"
     />
   </head>
@@ -21,51 +21,195 @@
       <!-- Header -->
       <div class="header">
         <h3>calc</h3>
+        <!-- TODO: Fix Styling -->
         <div class="header__theme">
           <p>THEME</p>
           <div class="header__theme-switch" onclick="switchToggler()">
             <label>1</label>
             <label>2</label>
             <label>3</label>
-            <input type="radio" name="selectedColor" value=1 checked="checked" />
-            <input type="radio" name="selectedColor" value=2 />
-            <input type="radio" name="selectedColor" value=3 />
+            <input
+              type="radio"
+              name="selectedColor"
+              value="1"
+              checked="checked"
+            />
+            <input type="radio" name="selectedColor" value="2" />
+            <input type="radio" name="selectedColor" value="3" />
           </div>
         </div>
       </div>
 
       <!-- Input -->
+      <!-- TODO: Use "," Every Third Number -->
       <div class="input">
-        <input type="number" name="number" id="number" />
+        <input type="text" name="number" id="number" />
       </div>
 
       <!-- Button -->
+      <!-- TODO: Add Calculation Function -->
       <div class="button">
-        <button type="button" class="btn-primary button__row-1">7</button>
-        <button type="button" class="btn-primary button__row-1">8</button>
-        <button type="button" class="btn-primary button__row-1">9</button>
-        <button type="button" class="btn-secondary button__row-1">DEL</button>
-        <button type="button" class="btn-primary button__row-2">4</button>
-        <button type="button" class="btn-primary button__row-2">5</button>
-        <button type="button" class="btn-primary button__row-2">6</button>
-        <button type="button" class="btn-primary button__row-2">+</button>
-        <button type="button" class="btn-primary button__row-3">1</button>
-        <button type="button" class="btn-primary button__row-3">2</button>
-        <button type="button" class="btn-primary button__row-3">3</button>
-        <button type="button" class="btn-primary button__row-3">-</button>
-        <button type="button" class="btn-primary button__row-4">.</button>
-        <button type="button" class="btn-primary button__row-4">0</button>
-        <button type="button" class="btn-primary button__row-4">/</button>
-        <button type="button" class="btn-primary button__row-4">x</button>
-        <button type="button" class="btn-secondary button__row-5" id="reset-btn">
+        <button
+          type="button"
+          value="7"
+          onclick="disNumber('7')"
+          class="btn-primary button__row-1"
+        >
+          7
+        </button>
+        <button
+          type="button"
+          value="8"
+          onclick="disNumber('8')"
+          class="btn-primary button__row-1"
+        >
+          8
+        </button>
+        <button
+          type="button"
+          value="9"
+          onclick="disNumber('9')"
+          class="btn-primary button__row-1"
+        >
+          9
+        </button>
+        <button
+          type="button"
+          onclick="delNum()"
+          class="btn-secondary button__row-1"
+        >
+          DEL
+        </button>
+        <button
+          type="button"
+          value="4"
+          onclick="disNumber('4')"
+          class="btn-primary button__row-2"
+        >
+          4
+        </button>
+        <button
+          type="button"
+          value="5"
+          onclick="disNumber('5')"
+          class="btn-primary button__row-2"
+        >
+          5
+        </button>
+        <button
+          type="button"
+          value="6"
+          onclick="disNumber('6')"
+          class="btn-primary button__row-2"
+        >
+          6
+        </button>
+        <button
+          type="button"
+          value="+"
+          onclick="disNumber('+')"
+          class="btn-primary button__row-2"
+        >
+          +
+        </button>
+        <button
+          type="button"
+          value="1"
+          onclick="disNumber('1')"
+          class="btn-primary button__row-3"
+        >
+          1
+        </button>
+        <button
+          type="button"
+          value="2"
+          onclick="disNumber('2')"
+          class="btn-primary button__row-3"
+        >
+          2
+        </button>
+        <button
+          type="button"
+          value="3"
+          onclick="disNumber('3')"
+          class="btn-primary button__row-3"
+        >
+          3
+        </button>
+        <button
+          type="button"
+          value="-"
+          onclick="disNumber('-')"
+          class="btn-primary button__row-3"
+        >
+          -
+        </button>
+        <button
+          type="button"
+          value="."
+          onclick="disNumber('.')"
+          class="btn-primary button__row-4"
+        >
+          .
+        </button>
+        <button
+          type="button"
+          value="0"
+          onclick="disNumber('0')"
+          class="btn-primary button__row-4"
+        >
+          0
+        </button>
+        <button
+          type="button"
+          value="/"
+          onclick="disNumber('/')"
+          class="btn-primary button__row-4"
+        >
+          /
+        </button>
+        <button
+          type="button"
+          value="*"
+          onclick="disNumber('*')"
+          class="btn-primary button__row-4"
+        >
+          x
+        </button>
+        <button
+          type="button"
+          onclick="clrNumber()"
+          class="btn-secondary button__row-5"
+          id="reset-btn"
+        >
           RESET
         </button>
-        <button type="button" class="btn-third button__row-5" id="equal-btn">
+        <button
+          type="button"
+          value="="
+          onclick="clcNumber()"
+          class="btn-third button__row-5"
+          id="equal-btn"
+        >
           =
         </button>
       </div>
     </div>
 
     <script src="script.js"></script>
+
+    <!-- Math -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+      integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+      integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>

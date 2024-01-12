@@ -9,3 +9,26 @@ function switchToggler() {
     }
   }
 }
+
+// TODO: Remove 0 When Other Number Inputted ex: 0123
+// TODO: Add "," Every Third Number
+
+function disNumber(num) {
+  document.getElementById("number").value += num;
+}
+
+function clrNumber() {
+  document.getElementById("number").value = "";
+}
+
+function clcNumber() {
+  num = document.getElementById("number").value;
+  document.getElementById("number").value = math.evaluate(
+    document.getElementById("number").value
+  );
+}
+
+function delNum() {
+  document.getElementById("number").value =
+    (document.getElementById("number").value / 10) ^ 0;
+}
