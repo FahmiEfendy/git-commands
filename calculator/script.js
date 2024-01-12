@@ -1,13 +1,23 @@
-function switchToggler() {
-  const input = document.getElementsByTagName("input");
+const redButton = document.querySelectorAll(".header__theme-switch-btn")[0];
 
-  for (const i in input) {
-    if (input[i].type === "radio") {
-      if (input[i].checked) {
-        document.body.classList = `theme-${[Number(input[i].value)]}`;
-      }
-    }
-  }
+function toggleTheme1() {
+  document.body.classList = "theme-1";
+  redButton.classList.remove("button-position-2");
+  redButton.classList.remove("button-position-3");
+  redButton.classList.add("button-position-1");
+}
+function toggleTheme2() {
+  document.body.classList = "theme-2";
+  redButton.classList.remove("button-position-1");
+  redButton.classList.remove("button-position-3");
+  redButton.classList.add("button-position-2");
+}
+
+function toggleTheme3() {
+  document.body.classList = "theme-3";
+  redButton.classList.remove("button-position-1");
+  redButton.classList.remove("button-position-2");
+  redButton.classList.add("button-position-3");
 }
 
 // TODO: Remove 0 When Other Number Inputted ex: 0123

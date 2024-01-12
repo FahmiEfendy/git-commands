@@ -21,33 +21,27 @@
       <!-- Header -->
       <div class="header">
         <h3>calc</h3>
-        <!-- TODO: Fix Styling -->
         <div class="header__theme">
           <p>THEME</p>
-          <div class="header__theme-switch" onclick="switchToggler()">
-            <label>1</label>
-            <label>2</label>
-            <label>3</label>
-            <input
-              type="radio"
-              name="selectedColor"
-              value="1"
-              checked="checked"
-            />
-            <input type="radio" name="selectedColor" value="2" />
-            <input type="radio" name="selectedColor" value="3" />
+          <div class="header__theme-switch">
+            <div class="header__theme-switch-btn-container">
+              <div class="header__theme-switch-btn"></div>
+            </div>
+            <div class="header__theme-switch-text-container">
+              <div class="toggle-text" onclick="toggleTheme1()">1</div>
+              <div class="toggle-text" onclick="toggleTheme2()">2</div>
+              <div class="toggle-text" onclick="toggleTheme3()">3</div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Input -->
-      <!-- TODO: Use "," Every Third Number -->
       <div class="input">
         <input type="text" name="number" id="number" />
       </div>
 
       <!-- Button -->
-      <!-- TODO: Add Calculation Function -->
       <div class="button">
         <button
           type="button"

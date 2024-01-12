@@ -19,6 +19,7 @@ input::-webkit-inner-spin-button {
   --primary-shadow-color: #b5a398;
   --secondary-shadow-color: #414e72;
   --third-shadow-color: #932316;
+  --webkit-transform: translateX(0px);
 }
 
 .theme-2 {
@@ -35,6 +36,7 @@ input::-webkit-inner-spin-button {
   --primary-shadow-color: #a69e92;
   --secondary-shadow-color: #1c6167;
   --third-shadow-color: #913901;
+  --webkit-transform: translateX(20px);
 }
 
 .theme-3 {
@@ -51,6 +53,7 @@ input::-webkit-inner-spin-button {
   --primary-shadow-color: #851c9d;
   --secondary-shadow-color: #bf16f5;
   --third-shadow-color: #59fcf2;
+  --webkit-transform: translateX(40px);
 }
 
 body {
@@ -106,22 +109,51 @@ body {
 }
 
 .header__theme p {
-  margin-right: 0.5rem;
+  margin: 3rem 0 auto auto;
 }
 
 .header__theme-switch {
-  display: grid;
+  position: relative;
+  width: 6rem;
+  height: 4.5rem;
 }
 
-.header__theme-switch label {
-  grid-row: 1;
+.header__theme-switch-text-container {
+  left: 20%;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  font-size: 0.9rem;
   text-align: center;
-  height: 0;
 }
 
-.header__theme-switch input {
-  margin-top: 0;
-  height: 30px;
+.toggle-text {
+  display: inline-block;
+  height: 4rem;
+  width: 1.3rem;
+  color: var(--third-text-color);
+}
+
+.header__theme-switch-btn-container {
+  background-color: var(--bg-btn-container);
+  width: 75%;
+  height: 40%;
+  position: relative;
+  left: 20%;
+  top: 65%;
+  border-radius: 1rem;
+}
+
+.header__theme-switch-btn {
+  width: 16px;
+  height: 16px;
+  background-color: var(--third-btn-color);
+  border-radius: 1rem;
+  position: relative;
+  top: 20%;
+  left: 10%;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transform: var(--webkit-transform);
 }
 
 .input {
@@ -160,7 +192,7 @@ body {
   width: 100%;
   font-size: 2.5rem;
   font-weight: 900;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 0;
 }
 
@@ -170,6 +202,7 @@ body {
 
 #reset-btn {
   grid-column: 1 / span 2;
+  margin-bottom: 10%;
 }
 
 #equal-btn {
