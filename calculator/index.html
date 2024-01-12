@@ -7,8 +7,55 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    Test
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h3>calc</h3>
+        <div class="header__theme">
+          <p>THEME</p>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="input">
+        <input type="number" name="number" id="number" />
+      </div>
+
+      <!-- Button -->
+      <div class="button">
+        <button type="button" class="btn-wheat button__row-1">7</button>
+        <button type="button" class="btn-wheat button__row-1">8</button>
+        <button type="button" class="btn-wheat button__row-1">9</button>
+        <button type="button" class="btn-blue button__row-1">DEL</button>
+        <button type="button" class="btn-wheat button__row-2">4</button>
+        <button type="button" class="btn-wheat button__row-2">5</button>
+        <button type="button" class="btn-wheat button__row-2">6</button>
+        <button type="button" class="btn-wheat button__row-2">+</button>
+        <button type="button" class="btn-wheat button__row-3">1</button>
+        <button type="button" class="btn-wheat button__row-3">2</button>
+        <button type="button" class="btn-wheat button__row-3">3</button>
+        <button type="button" class="btn-wheat button__row-3">-</button>
+        <button type="button" class="btn-wheat button__row-4">.</button>
+        <button type="button" class="btn-wheat button__row-4">0</button>
+        <button type="button" class="btn-wheat button__row-4">/</button>
+        <button type="button" class="btn-wheat button__row-4">x</button>
+        <button type="button" class="btn-blue button__row-5" id="reset-btn">
+          RESET
+        </button>
+        <button type="button" class="btn-orange button__row-5" id="equal-btn">
+          =
+        </button>
+      </div>
+    </div>
   </body>
 </html>

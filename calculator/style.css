@@ -1,5 +1,105 @@
+/* Remove Increment and Decrement Arrow from Input Type Number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
   margin: 0;
   height: 100vh;
   width: 100vw;
+  background-color: #3b4664;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-blue {
+  background-color: #647299;
+  color: #fcffff;
+  font-size: 1.6rem !important;
+}
+
+.btn-wheat {
+  background-color: #eae3db;
+  color: #484a55;
+}
+
+.btn-orange {
+  background-color: #d13f30;
+  color: #ffe1da;
+  font-size: 1.6rem !important;
+}
+
+.container {
+  width: 30%;
+  height: 75%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  color: #fefffd;
+}
+
+.header h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.header__theme {
+  margin-left: auto;
+}
+
+.input {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  margin: 1rem 0;
+  background-color: #181f32;
+  border-radius: 0.7rem;
+}
+
+.input input {
+  border-radius: 0.7rem;
+  width: 95%;
+  background-color: #181f32;
+  color: #fff;
+  border: 0;
+  text-align: right;
+  font-size: 3rem;
+  font-weight: 900;
+  outline: none;
+}
+
+.button {
+  padding: 2rem;
+  display: grid;
+  background-color: #252d44;
+  grid-gap: 1rem;
+  border-radius: 0.7rem;
+}
+
+.button button {
+  height: 4rem;
+  width: 6.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 1rem;
+  border: 0;
+}
+
+.button__row-1 {
+  grid-row: 1;
+}
+
+#reset-btn {
+  grid-column: 1 / span 2;
+  width: 95%;
+}
+
+#equal-btn {
+  width: 95%;
+  grid-column: 3 / span 2;
 }
